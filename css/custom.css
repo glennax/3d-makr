@@ -11,63 +11,20 @@
     font-weight: normal;
     font-style: normal;
 }
-@media (max-width: 1200px) {
-   header .warning{
- 		position: relative;
- 		right: -420px;
- 		top: -80px;
- }
-
- .eSignature{
- 	top: -25px;
- }
-
- #review header .warning, #send header .warning{
- 	right: -520px;
- }
-
-
-}
-
-@media (min-width: 768px){
-	.container {
-	    width: 1200px;
-	}
-}
-
-
-@media (min-width: 1200px) {
-   header .warning{
- 		position: absolute;
- 		right: 30px;
- 		top: 0;
- 		display: block;
- }
- .eSignature{
- 	top: 13px;
- }
-}
 
 
 body {
 	font-family: lato, sans-serif;
 	margin: 0px;
-	background: url('../images/backgroundLogo.png') repeat;
 	font-size: 12pt;
-	background-color: #fcfcfc;
-		color: #627881;
+	background-color: white;
+	color: #627881;
 }
 
 label{
 	font-size: 12pt;
 }
 
-
-.container-fluid{
-	width:1200px;
-	margin: 20px auto;
-
-}
 
 
 header{
