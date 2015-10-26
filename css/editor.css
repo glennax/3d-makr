@@ -1,0 +1,154 @@
+/* this CSS is not part of the widget, it is here just as an example of the demo page styling.... Don't copy this one, roll your own. One
+ * of the key things about the widget is that it allows you to do your own styling!
+ */
+
+#editor {
+	max-height: 250px;
+	height: 250px;
+	background-color: white;
+	border-collapse: separate; 
+	border: 1px solid rgb(204, 204, 204); 
+	padding: 4px; 
+	box-sizing: content-box; 
+	-webkit-box-shadow: rgba(0, 0, 0, 0.0745098) 0px 1px 1px 0px inset; 
+	box-shadow: rgba(0, 0, 0, 0.0745098) 0px 1px 1px 0px inset;
+	border-top-right-radius: 3px; border-bottom-right-radius: 3px;
+	border-bottom-left-radius: 3px; border-top-left-radius: 3px;
+	overflow: scroll;
+	outline: none;
+}
+
+.hero-unit{
+  background: rgba(168, 168, 170, .2);
+      padding-top: 20px;
+}
+.previewMessage .btn{
+  background-color: #5d80ba;
+  border-left: 1px solid white;
+}
+
+.previewMessage .btn:hover{
+  background-color: #7996c6;
+  border-left: 1px solid white;
+}
+
+.previewMessage .btn .caret{
+  margin-top: -6px;
+  margin-left: -5px;
+}
+
+.previewMessage .btn-group.open .btn.dropdown-toggle {
+  background-color: #f69a1b;
+}
+
+.previewMessage .btn-info{
+  border-color: #5d80ba;
+}
+
+#editor a{
+  text-decoration: underline;
+  color: #435374;
+}
+
+#voiceBtn {
+  width: 20px;
+  color: transparent;
+  background-color: transparent;
+  transform: scale(2.0, 2.0);
+  -webkit-transform: scale(2.0, 2.0);
+  -moz-transform: scale(2.0, 2.0);
+  border: transparent;
+  cursor: pointer;
+  box-shadow: none;
+  -webkit-box-shadow: none;
+}
+
+div[data-role="editor-toolbar"] {
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+}
+
+.dropdown-menu a {
+  cursor: pointer;
+}
+
+.colors{
+  margin-right: 5px;
+}
+#editor ul li, #previewEmail .modal-body ul li{
+  margin-left: 50px;
+}
+
+#previewEmail{
+     width: 60%;
+    height: 100%;
+    left: 20%;
+    min-width: 600px;
+}
+
+#previewEmail .modal-dialog{
+  width: 100%;
+}
+#previewEmail .modal-body #editor{
+
+  height:100%;
+  background-color: white;
+  border-collapse: separate;
+  border: none;
+  padding: 4px;
+  box-sizing: content-box;
+  -webkit-box-shadow: rgba(0, 0, 0, 0.0745098) 0px 0px 0px 0px inset;
+  box-shadow: rgba(0, 0, 0, 0.0745098) 0px 0px 0px 0px inset;
+  border-top-right-radius: 3px;
+  border-bottom-right-radius: 3px;
+  border-bottom-left-radius: 3px;
+  border-top-left-radius: 3px;
+  overflow: visible;
+  outline: none;
+    pointer-events: none;
+}
+
+#previewEmail .modal-body p {
+  font-size: 14pt;
+
+}
+
+table p{
+  margin-top: 0;
+}
+
+#editor b{
+  font-size: inherit;
+  font-weight: bold;
+}
+
+#editor em{
+    font-size: inherit;
+  font-style: italic;
+}
+
+#editor blockquote{
+  padding-top: 0;
+  padding-bottom: 0;
+  margin: 0;
+  border: none;
+  font-size: inherit;
+}
+
+#editor blockquote p{
+  line-height: inherit;
+  font-size: inherit;
+}
+
+#editor li blockquote{
+  padding: 0 20px;
+  margin: 0;
+  border: none;
+    font-size: inherit;
+}
+
+#editor ul {
+    margin-left: 20px;
+}

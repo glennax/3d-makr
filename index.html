@@ -1,0 +1,318 @@
+<!doctype html>
+<html>
+<head>
+<title>DocMaide</title>
+<meta charset="UTF-8">
+
+<meta content="IE=10; IE=9; IE=8; IE=7; IE=EDGE" http-equiv="X-UA-Compatible" />
+
+<!-- jQuery -->
+<script src="http://code.jquery.com/jquery-1.11.1.min.js"></script>
+<link rel="shortcut icon" href="favicon.ico" type="image/x-icon" />
+<!-- Bootstrap Tree CSS -->
+<link rel="stylesheet" href="css/bootstrap-combined.min.css">
+<!-- Bootstrap CSS -->
+<link href="css/bootstrap.min.css" rel="stylesheet" />
+<!-- Bootstrap JS -->
+<script src="js/bootstrap.js"></script>
+
+<!-- Bootstrap Tree JS -->
+<script src="js/bootstrap-tree.js"></script>
+
+<!-- Custom CSS -->
+<link href="css/custom.css" rel="stylesheet" />
+
+<!-- Dropdown Menu -->
+<link rel="stylesheet" type="text/css" href="SimpleDropDownEffects/css/style1.css" />
+<script src="SimpleDropDownEffects/js/modernizr.custom.63321.js"></script>
+<script type="text/javascript" src="SimpleDropDownEffects/js/jquery.dropdown.js"></script>
+
+
+</head>
+
+<body>
+
+<div class="container-fluid">
+
+<header>
+			<div id="rect"></div>
+			<div id="rect2"><img src="images/DocMaide_Logo_White.png"></div>
+		<div class="row">
+		<div class="userInfo">
+		      <!--  for CCRM, use: Customer #;
+		            for VCRM, use: Vendor #; -->
+		      <span>Customer</span> &#35; <span>XXXXXXXXXXXX</span> &#124; <span>Customer Name</span>
+
+		</div>
+		<div class="clearfix"></div>
+		<div class="step col-xs-4 col-xs-push-5">
+			<div class="circleActive">1</div>
+			<div class="circle">2</div>
+	
+			<div class="circle">3</div>
+	
+
+		</div>
+
+		<div class="clearfix"></div>
+		<div class="stepDesc col-xs-4 col-xs-push-5">
+			<div class="search activeText">Search</div>
+			<div class="edit">Review</div>
+			<div class="send">Send</div>
+
+		</div>
+
+	<!-- 	<div class="warning">
+			<div class="warningIcon"><img src="images/yellowYield.png"></div><button type="button" class="btn btn-default" id="showWarnings" data-toggle="modal" data-target="#warnings"><span>Show Warnings</span></button>
+
+		</div> -->
+
+	</div>
+
+
+</header>
+
+
+<div class="row">
+
+	<form>
+<!-- 
+	<div class="form-group col-xs-3">
+
+	    <select id="cd-dropdown" class="cd-select">
+  			<option value="-1" selected>Search Criteria</option>
+  			<option value="aspireNumber" ><a href="reports2.html">Aspire Number</a></option>
+  			<option value="listNumber" >List Number</option>
+ 
+		</select>
+ 
+	</div>
+	
+	<div class="form-group col-xs-7">
+
+	    <input type="text" class="form-control">
+	  </div>
+
+	<div class="form-group col-xs-2">
+ 
+		<a href="#" class="searchLink"><img src="images/magGlass.png" class="magGlass">Search</a>
+	</div>
+
+
+	 <div class="clearfix"></div>
+	 -->
+	<div class="form-group col-xs-10 result">
+	    <label>Available Documents: </label>
+
+	 </div>
+
+	 <div class="form-group col-xs-2 reset">
+	 	<a href="#">Reset</a>
+	 </div>
+
+	 <div class="clearfix"></div>
+		
+			<div class="tree well">
+			    <ul>
+			        <li>
+			            <input type="checkbox" class="css-checkbox" id="checkbox1"><span><i></i>Parent<b></b></span>
+			            
+			            <ul>
+			                <li>
+			                	<input type="checkbox" disabled readonly><span><i></i><em data-container="body" data-toggle="popover" data-placement="right" data-content="Error: you can't touch this" class="unavailable">Child<img src="images/stopRed.png" class="redHand"><b></b></em></span>
+			        		</li>
+			             
+			            </ul>
+			        </li>
+			        <li > 
+			             <input type="checkbox" disabled readonly><span><i></i><em data-container="body" data-toggle="popover" data-placement="right" data-content="Error: you can't touch this" class="unavailable">Parent2<img src="images/stopRed.png" class="redHand"><b></b></em></span>
+			      
+			        </li>
+
+			        <li > 
+			             <input type="checkbox"><span><i></i><em data-container="body" data-toggle="popover" data-placement="right" data-content="Warning: Something is wrong with this template" class="available">Parent3<img src="images/yellowYield.png" class="yellowYield"><b></b></em></span>
+			      
+			        </li>
+
+			         <li>
+			            <input type="checkbox" class="css-checkbox" id="checkbox1"><span><i></i>Parent4<b></b></span>
+			            
+			            <ul>
+			                <li>
+			                	<input type="checkbox" disabled readonly><span><i></i><em data-container="body" data-toggle="popover" data-placement="right" data-content="Error: you can't touch this" class="unavailable">Child<img src="images/stopRed.png" class="redHand"><b></b></em></span>
+
+			        		</li>
+			             
+	                        <li>
+		                        <input type="checkbox"><span><i></i>Child</span>
+
+	                        </li>
+			               
+			               
+			                <li>
+			                	<input type="checkbox"><span><i></i>Child</span>
+			                   
+			                </li>
+			            </ul>
+			        </li>
+			    </ul>
+	 </div>
+
+	<div class="pull-right col-xs-3">
+		<button class="btn btn-default" data-toggle="modal" data-target="#myModal" type="button"><span>Generate Documents</span></button>
+	</div>
+	</form>
+
+
+</div><!-- closing row -->
+
+<!-- Modal -->
+<div class="modal fade" id="myModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+  <div class="modal-dialog modal-lg" role="document">
+    <div class="modal-content">
+      <div class="modal-header">
+      <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+        <h2 class="modal-title" id="myModalLabel">Please include the following information:</h2>
+
+      </div>
+      <div class="modal-body">
+      	<div class="row">
+			<form class="form-horizontal">
+				<h3>Daily Loan Booking Instructions</h3>
+				<div class="clearfix"></div>
+				<div class="form-group">
+				    <label for="name" class="col-xs-4 control-label">Buy Rate:</label>
+				    <div class="col-xs-8">
+				      <input type="text" class="form-control" id="name">
+				    </div>
+				</div>
+				<div class="form-group">
+				   <label for="title" class="col-xs-4 control-label">Doc Fee $:</label>
+				   <div class="col-xs-8">
+				      <input type="text" class="form-control" id="title">
+				   </div>
+				</div>
+				<div class="form-group">
+				   <label for="title" class="col-xs-4 control-label">ACH Bank Account #:</label>
+				   <div class="col-xs-8">
+				      <input type="text" class="form-control" id="title">
+				   </div>
+				</div>
+				<div class="form-group">
+				   <label for="title" class="col-xs-4 control-label">All Credit Conditions Completed:</label>
+				   <div class="col-xs-8 radio-group">
+				       <label class="radio-inline">
+	    					<input type="radio" name="radioGroup" id="yes" value="yes" checked>Yes
+	    				</label>
+				     <label class="radio-inline">
+				    	<input type="radio" name="radioGroup" id="no" value="no">No
+				    </label>
+				   </div>
+				</div>
+			</form>
+
+
+      	</div>
+      </div>
+      <div class="modal-footer">
+        <button onclick="location='http://www.google.com/'" type="button" class="btn btn-default" id="continue" ><span>Continue</span><img src="images/arrow.png" class="arrowRight" ></button>
+      </div>
+    </div>
+  </div>
+</div><!-- closing modal -->
+
+<!-- Warning Modal -->
+<div class="modal fade" id="warnings" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+    <div class="modal-dialog">
+    <div class="modal-content">
+
+      <div class="modal-body">
+        <div class="warning">
+			<div class="warningIcon"><img src="images/yellowYield.png">Warning:</div>Customer has a Master Agreement that can't be used on this app because this app's product does not match the Agreement
+		</div>
+
+
+		<div class="warning">
+			<div class="warningIcon"><img src="images/yellowYield.png">Warning:</div>Customer has a Master Agreement that can't be used on this app because this app's product does not match the Agreement
+		</div>
+
+		<div class="warning">
+			<div class="warningIcon"><img src="images/yellowYield.png">Warning:</div>Customer has a Master Agreement that can't be used on this app because this app's product does not match the Agreement
+		</div>
+
+
+      </div>
+      <div class="modal-footer">
+      		<button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+  	  </div>
+    </div><!-- /.modal-content -->
+  </div><!-- /.modal-dialog -->
+</div><!-- closing modal -->
+
+</div><!-- closing container fluid-->
+
+<script>
+var validReload = false;
+$("button").click(function(){
+        validReload = true;
+    });
+window.onbeforeunload = function (e) {
+	//console.log(validReload);
+	if(!validReload){
+	    e = e || window.event;
+
+	    // For IE and Firefox prior to version 4
+	    if (e) {
+	        e.returnValue = 'Your process will be lost if you leave DocMaide now';
+	    }
+	    // For Safari
+	    return 'Your process will be lost if you leave DocMaide now';
+	}
+};
+
+$(document).ready(function(){
+
+	//continue button validation
+	// $("#continue").click(function (e) {
+ //    	if($(".modal-footer").children("div").length <= 0) {
+ //       			$(".modal-footer").append("<div></div>");
+ //       			$(".modal-footer div")
+ //       				.append("<img src=" + "images/stopRed.png" + ">")
+ //       				.append( "<span>All fields are required to continue. </span>" )
+ //       				.addClass("reminder");
+ //       			$(".reminder").css("margin-top", "10px");
+ //       			$(".reminder span").css({"margin-left": "3px",
+ //       									"color": "#C10000"});
+   				
+
+ //    	}
+	// });
+
+	$(function () {
+	  	$('[data-toggle="popover"].unavailable').popover({
+	  		template: '<div class="popover errorPopover" role="tooltip"><div class="arrow"></div><h3 class="popover-title"></h3><div class="popover-content"></div></div>'
+
+	  	});
+	  	 $('[data-toggle="popover"].available').popover({
+	  		template: '<div class="popover warningPopover" role="tooltip"><div class="arrow"></div><h3 class="popover-title"></h3><div class="popover-content"></div></div>'
+
+	  	});
+	});
+
+});
+
+
+    $(function () {
+        $('#cd-dropdown').dropdown({
+            //gutter: 2,
+            easing: 'ease',
+            onOptionSelect: function (opt) {
+                alert(opt.attr("data-value"));
+            }
+        });
+    });
+
+</script>
+
+</body>
+</html>
