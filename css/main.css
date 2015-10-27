@@ -3,13 +3,40 @@ CFF09E
 A8DBA8
 79BD9A
 3B8686
-0B486B*/
+0B486B
+edf7fd
+*/
 
 body{
 	font-family: 'Roboto', sans-serif;
 }
 .navbar{
 	margin-bottom: 0;
+	background-color: #79BD9A;
+	height: 60px;
+	border: none;
+	border-radius: 0;
+}
+.navbar-default .navbar-nav>li>a{
+	color: #edf7fd;
+	font-size: 14pt;
+	padding-top: 20px;
+}
+.navbar-default .navbar-nav>li>a:hover{
+	color: #0B486B;
+	transition: all .5s ease-in-out;
+}
+.navbar-header{
+	font-family: 'Righteous', 'Roboto', sans-serif;
+
+}
+.navbar-header a{
+		font-size: 24pt;
+		color: #dba8a8;
+	}
+.tagline{
+	position: absolute;
+
 }
 h2, h3, h4{
 	font-weight: normal;
@@ -52,7 +79,7 @@ h2, h3, h4{
 
 .coupon{
 	height: 300px; 
-	background-color: #FBFDFC;
+	background-color: #edf7fd;
 }
 .coupon h4{
 	font-size: 28pt;
@@ -63,4 +90,10 @@ h2, h3, h4{
 #couponBtn{
 	position: relative;
 
+}
+.tower{
+	padding:0;
+}
+.tower img{
+	width: 100%;
 }
