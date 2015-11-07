@@ -5,10 +5,17 @@ A8DBA8
 3B8686
 0B486B
 edf7fd
+red: bd797a;
 */
 
 body{
 	font-family: 'Roboto', sans-serif;
+}
+
+.container-fluid{
+	margin: 0;
+padding: 0;
+
 }
 .navbar{
 	margin-bottom: 0;
@@ -16,6 +23,7 @@ body{
 	height: 60px;
 	border: none;
 	border-radius: 0;
+	    padding-right: 15px;
 }
 .navbar-default .navbar-nav>li>a{
 	color: #edf7fd;
@@ -31,15 +39,31 @@ body{
 
 }
 .navbar-header a{
-		font-size: 24pt;
-		color: #dba8a8;
-	}
+	font-size: 28pt;
+}
+.navbar-default .navbar-brand:hover,
+.navbar-default .navbar-brand:active,
+.navbar-default .navbar-brand:focus,
+.navbar-default .navbar-brand:visited{
+	 color: #bd797a;
+}
+
+.navbar-default .navbar-brand {
+    color: #bd797a;
+    position: relative;
+    top: 4px;
+    left: 15px;
+}
 .tagline{
-	position: absolute;
+	    width: 750px;
+    margin: 0 auto;
+    position: relative;
 
 }
 h2, h3, h4{
 	font-weight: normal;
+	color: #3B8686;
+	  text-align: center;
 }
 .intro{
 	width: 100%;
@@ -48,40 +72,50 @@ h2, h3, h4{
 	text-align: center;
 	margin: 0;
 	color: #3B8686;
+	margin-top: 60px;
 }
-
+.content{
+/*	margin-top: 60px;*/
+}
 .intro h2{
 	font-size: 38pt;
 	font-weight: 900;
 	margin-top: 200px;
 }
 
-.intro h3{
+h3{
 	font-size: 34pt;
 	font-weight: 700;
+	    margin-bottom: 35px;
+
 }
 
-.testimonial1, .testimonial2, .testimonial3{
+.testimonial{
 	height: 300px;
 }
 
-.testimonial1{
+.testimonial{
 	background-color: #CFF09E;
 }
-
-.testimonial2{
-	background-color: #A8DBA8;
+.testimonial p {
+	font-size: 24pt;
 }
 
-.testimonial3{
-	background-color: #79BD9A;
+.testimonial .customer{
+	font-size: 14pt;
+}
+
+.quote{
+	    width: 100px;
+    margin-top: 20px;
+    margin-bottom: 10px;
 }
 
 .coupon{
 	height: 300px; 
-	background-color: #edf7fd;
+	background-color: #A8DBA8;
 }
-.coupon h4{
+h4{
 	font-size: 28pt;
 	font-weight: 500;
 	margin: 50px;
@@ -93,27 +127,169 @@ h2, h3, h4{
 }
 .tower{
 	padding:0;
-}
-.tower img{
-	width: 100%;
+	background: no-repeat center/100% url("../images/rsz_homepage.jpg");
+    height: 683px;
 }
 
+.btn-default{
+	background-color: #bd797a;
+	box-shadow: 0 8px #a85354;
+	border-radius: 10px;
+	border-color: #bd797a;
+	color: white;
+	    outline: none;
+	        padding: 6px 25px;
+    font-size: 14pt;
+}
+.btn-default:hover{
+    color: white;
+    background-color: #b56869;
+    border-color: #b56869;
+}
 
+.btn-default:active{
+	 background-color: #b56869;
+  box-shadow: 0 5px #a85354;
+  transform: translateY(3px);
+   outline: none;
+
+}
+.btn-default:focus{
+	  color: white;
+    background-color: #b56869;
+    border-color: #b56869;
+ outline: none;
+}
+.btn-lg{
+	padding: 10px 20px;
+	font-size: 20pt;
+}
+
+.signUp{
+	margin-top: 8px;
+}
+
+.couponForm .form-control{
+	height: 50px;
+}
+
+.couponForm .form-control:focus {
+    border-color:#3B8686;
+    outline: 0;
+    -webkit-box-shadow: inset 0 1px 1px rgba(0,0,0,.075), 0 0 8px rgba(59, 134, 134, 0.6);
+    box-shadow: inset 0 1px 1px rgba(0,0,0,.075), 0 0 8px rgba(59, 134, 134, 0.6);
+}
+
+.selection{
+	height: 300px;
+	text-align: center;
+	background-color: #A8DBA8;
+
+}
+
+#option1btn, #option2btn{
+	margin: 0 40px;
+}
+
+.content .title{
+	text-align: center;
+	background-color: #A8DBA8;
+	padding: 20px;
+}
+
+.title h3{
+    border-bottom: 2px solid #edf7fd;
+    width: 850px;
+    margin: 0 auto;
+    padding: 30px 0;
+
+}
+
+#option1{
+	background-color: #edf7fd;
+	height: 400px;
+	text-align: center;
+}
+
+.red{
+	color: #bd797a !important;
+}
+
+.bigNum{
+	font-size: 32pt;
+	text-align: center;
+	color: #3B8686;
+	margin-bottom: 15px;
+}
+
+.instruction{
+	font-size: 18pt;
+	text-align: center;
+	color: #3B8686;
+	margin: 30px 0;
+}
+
+#option1 h4, #option2 h4{
+	margin: 30px 0;
+}
+#option2{
+	height: 400px;
+	background-color: #79BD9A;
+	text-align: center;
+	color: #edf7fd;
+}
+#option2 h4{
+	color:  #edf7fd;
+	margin-bottom: 40px;
+}
+.needHelp{
+	font-size: 24pt;
+}
+.ourTeam{
+	font-size: 20pt;
+}
+ 
+#submit{
+	margin-top: 20px;
+}
+
+.btn-default a{
+	color: white;
+	text-decoration: none;
+}
+.btn-default a:hover{
+	color: white;
+}
+/*footer*/
 html {
   position: relative;
   min-height: 100%;
 }
 
 .footer {
-  position: absolute;
+ 
   bottom: 0;
   width: 100%;
-  background-color: #435374;
+  background-color: #0B486B;
   color: white;
-  padding: 20px;
-  min-width: 1250px;
+
+  text-align: center;
+/*  display: none;*/
 }
 
 .footer.row{
 	margin: 0;
+
+}
+
+.footer p{
+	margin: 0;
+}
+
+.footer .group1, .footer .group2{
+	margin: 15px auto;
+}
+
+.copyright{
+	margin-bottom: 15px;
 }
