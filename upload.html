@@ -1,7 +1,7 @@
 <!doctype html>
 <html>
 <head>
-<title>The 3D Makr</title>
+<title>Upload Model</title>
 <meta charset="UTF-8">
 
 <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -51,7 +51,7 @@
     <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
       <ul class="nav navbar-nav">
         <li class=""><a href="how-it-works.html">How It Works<span class="sr-only">(current)</span></a></li>
-        <li><a href="upload.html">Upload Model</a></li>
+        <li><a href="upload.html" class="active">Upload Model</a></li>
         <li><a href="customize.html">Customized Design</a></li>
 
       </ul>
@@ -62,24 +62,30 @@
         <button type="submit" class="btn btn-default">Submit</button>
       </form> -->
       <ul class="nav navbar-nav navbar-right">
-        <li class="signUp"><button type="button" class="btn btn-default">Sign Up</button></li>
-		 <li><a href="#">Log In</a></li>
-		 <li><a href="#">Contact Us</a></li>
+       <li class="signUp"><button type="button" class="btn btn-default" data-toggle="modal" data-target="#signup">Sign Up</button></li>
+        <li><a href="#" data-toggle="modal" data-target="#login">Log In</a></li>
+        <li><a href="contact.html">Contact Us</a></li>
       </ul>
     </div><!-- /.navbar-collapse -->
   </div><!-- /.container-fluid -->
 </nav>
 <div class="container-fluid">
-<div class="content row">
+<div class="content row upload">
+<div class="col-sm-12 title">
+    <h3>You are 3 steps away from having your 3D model delivered to your home.</h3>
 
+
+  </div>
 
    <div class="col-sm-12 form-group fileInput">
+    <div class="overlay"></div>
      <h4>Step 1: Upload Your File</h4>
      <p class="instruction">Supported format: .stl, .obj, .blend, .ply</p>
         <input id="file-1" type="file" multiple class="file">
     </div>
 
     <div class="col-sm-12 form-group" id="settings">
+        <div class="overlay"></div>
      <h4>Step 2: Choose Your Settings</h4>
      <div class="col-sm-12 form-group">
 
@@ -215,6 +221,7 @@
     </div>
 
    <div class="col-sm-12" id="pay">
+    <div class="overlay"></div>
      <h4>Step 3: Check Out</h4>
      <div class="col-sm-6 address divider">
          <form class="form-horizontal">
@@ -918,7 +925,7 @@
         </div>
      </div>
 
-     <div class="col-sm-6 payment">
+    <div class="col-sm-6 payment">
       <h5>Payment Info</h5>
       <div class="form-group">
         <label class="control-label">Name on Card</label>
@@ -955,6 +962,14 @@
 
    </div>
 
+
+    <div class="col-sm-12 form-group" id="feedback">
+      <img src="images/printer.png" alt="3D Printer Icon" class="printer">
+     <h4>Thank you! Your order has been placed.</h4>
+     <p>You will receive a confirmation email shortly.</p>
+   
+    </div>
+
 </div><!-- closing row -->
 </div><!-- closing container -->
   <footer class="row footer">
@@ -974,6 +989,96 @@
     </div>
     </div>
   </footer>
+
+<!-- modal -->
+<div class="modal fade" role="dialog" aria-labelledby="gridSystemModalLabel" id="signup">
+  <div class="modal-dialog" role="document">
+    <div class="modal-content">
+      <div class="modal-header">
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+        <h4 class="modal-title" id="gridSystemModalLabel">New User Sign Up</h4>
+      </div>
+      <div class="modal-body">
+        <div class="row">
+          <div class="form-group col-sm-6">
+            <label>First Name:</label>
+            <input class="form-control" type="text" placeholder="First Name">
+          </div>
+
+          <div class="form-group col-sm-6">
+            <label>Last Name:</label>
+            <input class="form-control" type="text" placeholder="Last Name">
+          </div>
+
+          <div class="form-group col-sm-12">
+            <label>Email:</label>
+            <input class="form-control" type="email" placeholder="Email">
+          </div>
+
+          <div class="form-group col-sm-12">
+            <label>Choose a username:</label>
+            <input class="form-control" type="text" placeholder="Username">
+          </div>
+
+          <div class="form-group col-sm-12">
+            <label>Create a password:</label>
+            <input class="form-control" type="password" placeholder="Password">
+         
+          </div>
+
+          <div class="form-group col-sm-12">
+            <label>Re-enter password:</label>
+            <input class="form-control" type="password" placeholder="Re-enter password">
+         
+          </div>
+        
+        
+        </div>
+        
+      </div>
+      <div class="modal-footer">
+        
+        <button type="button" class="btn btn-default">Sign Up</button>
+      </div>
+    </div><!-- /.modal-content -->
+  </div><!-- /.modal-dialog -->
+</div><!-- /.modal -->
+
+<!-- modal -->
+<div class="modal fade" role="dialog" aria-labelledby="gridSystemModalLabel" id="login">
+  <div class="modal-dialog" role="document">
+    <div class="modal-content">
+      <div class="modal-header">
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+        <h4 class="modal-title" id="gridSystemModalLabel">Existing User Log In</h4>
+      </div>
+      <div class="modal-body">
+        <div class="row">
+
+
+          <div class="form-group col-sm-12">
+            <label>Username:</label>
+            <input class="form-control" type="text" placeholder="Username">
+          </div>
+
+          <div class="form-group col-sm-12">
+            <label>Password:</label>
+            <input class="form-control" type="password" placeholder="Password">
+            <a href="#" class="forgot pull-right">Forgot password?</a>
+          </div>
+        
+        </div>
+        
+      </div>
+      <div class="modal-footer">
+        
+        <button type="button" class="btn btn-primary">Log In</button>
+      </div>
+    </div><!-- /.modal-content -->
+  </div><!-- /.modal-dialog -->
+</div><!-- /.modal -->
+
+
 <script>
 
 
@@ -993,20 +1098,15 @@
       $('#next').on('click', function(){
         $('#pay').show();
         location.href = "upload.html#pay";
-      })
+      
+      });
+
+      $('#finish').on('click', function(){
+        $('#feedback').show();
+        location.href = "upload.html#feedback";
+        $('.overlay').show();
+      });
    });
-
-
-	// $(function () {
-	//   	$('[data-toggle="popover"].unavailable').popover({
-	//   		template: '<div class="popover errorPopover" role="tooltip"><div class="arrow"></div><h3 class="popover-title"></h3><div class="popover-content"></div></div>'
-
-	//   	});
-	//   	 $('[data-toggle="popover"].available').popover({
-	//   		template: '<div class="popover warningPopover" role="tooltip"><div class="arrow"></div><h3 class="popover-title"></h3><div class="popover-content"></div></div>'
-
-	//   	});
-	// });
 
 
 

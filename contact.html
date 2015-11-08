@@ -1,7 +1,7 @@
 <!doctype html>
 <html>
 <head>
-<title>The 3D Makr</title>
+<title>Contact Us</title>
 <meta charset="UTF-8">
 
 <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -42,8 +42,8 @@
     <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
       <ul class="nav navbar-nav">
         <li class=""><a href="how-it-works.html">How It Works<span class="sr-only">(current)</span></a></li>
-        <li><a href="#">Upload Model</a></li>
-        <li><a href="#">Customized Design</a></li>
+        <li><a href="upload.html">Upload Model</a></li>
+        <li><a href="customize.html">Customized Design</a></li>
 
       </ul>
      <!--  <form class="navbar-form navbar-left" role="search">
@@ -53,83 +53,64 @@
         <button type="submit" class="btn btn-default">Submit</button>
       </form> -->
       <ul class="nav navbar-nav navbar-right">
-        <li class="signUp"><button type="button" class="btn btn-default">Sign Up</button></li>
-		 <li><a href="#">Log In</a></li>
-		 <li><a href="#">Contact Us</a></li>
+          <li class="signUp"><button type="button" class="btn btn-default" data-toggle="modal" data-target="#signup">Sign Up</button></li>
+        <li><a href="#" data-toggle="modal" data-target="#login">Log In</a></li>
+		    <li><a href="contact.html" class="active">Contact Us</a></li>
       </ul>
     </div><!-- /.navbar-collapse -->
   </div><!-- /.container-fluid -->
 </nav>
 <div class="container-fluid">
 <div class="content row">
-  <div class="col-sm-12 title">
-    <h3>How Does <span class="brand">The 3D Makr</span> work?</h3>
+  <div class="col-sm-12 title contactTitle">
+    <h3>We look forward to talking to you. </h3>
 
-  </div>
-  <div class="col-sm-12 selection">
-    <h4>Please select from the following:</h4>
-     <button type="button" class="btn btn-default btn-lg" id="option1btn"><a href="#option1">I know what I want to 3D print</a></button>
-    <button type="button" class="btn btn-default btn-lg" id="option2btn"><a href="#option2">I don't know what to 3D print</a></button>
-   
-
+    <h4>Please let us know if you have any questions, concerns and suggestions.</h4>
   </div>
 
-  <div class="col-sm-12" id="option1">
-    <h4>Print Your Own Model</h4>
-    <div class="col-sm-4">
-      <p class="bigNum1">1</p><img src="images/step1.png" height="135px" alt="upload model file">
-      <p class="instruction">Upload Model File</p>
-      <p class="description1">We accept most standard 3D file formats including:</p>
-       <ul class="itemList1">
-       <li>.stl</li>
-        <li>.obj</li>
-        <li>.blend </li>
-        <li>.ply</li>
-       </ul>
+  <div class="contact row">
+    <div class="contactForm col-sm-6">
+     <form class="form-horizontal">
+        <div class="form-group">
+          <label class="control-label">Full Name</label>
+          <input class="form-control" type="text" placeholder="Full Name">
+
+        </div>
+
+        <div class="form-group">
+          <label class="control-label">Email</label>
+          <input class="form-control" type="email" placeholder="Email">
+
+        </div>
+
+        <div class="form-group">
+          <label class="control-label">Phone</label>
+          <input class="form-control" type="tel" placeholder="Phone">
+
+        </div>
+
+        
+        <div class="form-group">
+           <label class="control-label">Message:</label>
+          <textarea class="form-control" rows="7" placeholder="Message"></textarea>
+          <p class="feedbackmsg">Your message has been sent. Our team will respond to your inquiry within 24 hours.</p>
+        </div>
+
+        <button type="button" class="btn btn-default btn-lg pull-right" id="submitForm">Submit</button>
+     </form>
     </div>
 
-    <div class="col-sm-4">
-      <p class="bigNum2">2</p><img src="images/step2.png" alt="choose settings">
-      <p class="instruction">Choose Settings</p>
-        <p class="description2">You can choose the following settings:</p>
-       <ul class="itemList2">
+    <div class="col-sm-6 contactInfo">
+      <h5>We can also be reached by:</h5>
+          <p>Phone: 123-456-7890</p>
+          <p>Email: support@3dmakr.com</p>
 
-       <li>Color</li>
-          <li>Material</li>
-          <li>Size</li>
-        <li>Layer Thickness</li>
-  
-     
-       </ul>
+    
+          <p>Address: 1234 Chambers Road, Aurora, CO 80011</p>
+        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1084.8016947440296!2d-104.80981109513301!3d39.733303815338076!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x876c630fd0a151cd%3A0x91c1245893a9c2f5!2s1234+Chambers+Rd%2C+Aurora%2C+CO+80011!5e0!3m2!1sen!2sus!4v1447006631320" width="470" height="400" frameborder="0" style="border:0" allowfullscreen></iframe>
+
     </div>
-
-      <div class="col-sm-4">
-      <p class="bigNum3">3</p><img src="images/step3.png" height="135px" alt="Check Out">
-      <p class="instruction">Check Out</p>
-      <p class="description3">You can pay by:</p>
-       <ul class="itemList3">
-       <li>PayPal</li>
-        <li>Credit Card</li>
-        <li>Debit Card</li>
-       </ul>
-    </div>
-    <div class="clearfix"></div>
-     <button type="button" class="btn btn-default btn-lg" id="upload">Try It Out</button>
-
   </div>
-
-  <div class="col-sm-12" id="option2">
-    <h4>Customize Your Design</h4>
-    <p class="needHelp">Need help design your own model?</p>
-    <img src="images/message.png" width="200px" alt="Contact us for customized design" class="message">
-    <p class="ourTeam">Our team is here to work with you so that you can design and print your best creative ideas. </p>
-     <p class="ourTeam">Simply fill out a form and our team will reach out to you within 24 hours.</p>
-
-    <button type="button" class="btn btn-default btn-lg" id="submit">Submit Request</button>
-  </div>
-
-
-
 </div><!-- closing row -->
 </div><!-- closing container -->
   <footer class="row footer">
@@ -139,8 +120,8 @@
         <p>Email: support@3dmakr.com</p>
       </div>
       <div class="group2"> 
-        <p>1234 Chamber Road</p>
-        <p>Denver, CO 80210</p>
+        <p>1234 Chambers Road</p>
+        <p>Aurora, CO 80011</p>
       </div>
        
    
@@ -149,35 +130,98 @@
     </div>
     </div>
   </footer>
+  <!-- modal -->
+<div class="modal fade" role="dialog" aria-labelledby="gridSystemModalLabel" id="signup">
+  <div class="modal-dialog" role="document">
+    <div class="modal-content">
+      <div class="modal-header">
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+        <h4 class="modal-title" id="gridSystemModalLabel">New User Sign Up</h4>
+      </div>
+      <div class="modal-body">
+        <div class="row">
+          <div class="form-group col-sm-6">
+            <label>First Name:</label>
+            <input class="form-control" type="text" placeholder="First Name">
+          </div>
+
+          <div class="form-group col-sm-6">
+            <label>Last Name:</label>
+            <input class="form-control" type="text" placeholder="Last Name">
+          </div>
+
+          <div class="form-group col-sm-12">
+            <label>Email:</label>
+            <input class="form-control" type="email" placeholder="Email">
+          </div>
+
+          <div class="form-group col-sm-12">
+            <label>Choose a username:</label>
+            <input class="form-control" type="text" placeholder="Username">
+          </div>
+
+          <div class="form-group col-sm-12">
+            <label>Create a password:</label>
+            <input class="form-control" type="password" placeholder="Password">
+         
+          </div>
+
+          <div class="form-group col-sm-12">
+            <label>Re-enter password:</label>
+            <input class="form-control" type="password" placeholder="Re-enter password">
+         
+          </div>
+        
+        
+        </div>
+        
+      </div>
+      <div class="modal-footer">
+        
+        <button type="button" class="btn btn-default">Sign Up</button>
+      </div>
+    </div><!-- /.modal-content -->
+  </div><!-- /.modal-dialog -->
+</div><!-- /.modal -->
+
+<!-- modal -->
+<div class="modal fade" role="dialog" aria-labelledby="gridSystemModalLabel" id="login">
+  <div class="modal-dialog" role="document">
+    <div class="modal-content">
+      <div class="modal-header">
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+        <h4 class="modal-title" id="gridSystemModalLabel">Existing User Log In</h4>
+      </div>
+      <div class="modal-body">
+        <div class="row">
+
+
+          <div class="form-group col-sm-12">
+            <label>Username:</label>
+            <input class="form-control" type="text" placeholder="Username">
+          </div>
+
+          <div class="form-group col-sm-12">
+            <label>Password:</label>
+            <input class="form-control" type="password" placeholder="Password">
+            <a href="#" class="forgot pull-right">Forgot password?</a>
+          </div>
+        
+        </div>
+        
+      </div>
+      <div class="modal-footer">
+        
+        <button type="button" class="btn btn-primary">Log In</button>
+      </div>
+    </div><!-- /.modal-content -->
+  </div><!-- /.modal-dialog -->
+</div><!-- /.modal -->
 <script>
+ $('#submitForm').on('click',function(){
+  $('.feedbackmsg').show();
 
-$(document).ready(function(){
-
-	$(function () {
-	  	$('[data-toggle="popover"].unavailable').popover({
-	  		template: '<div class="popover errorPopover" role="tooltip"><div class="arrow"></div><h3 class="popover-title"></h3><div class="popover-content"></div></div>'
-
-	  	});
-	  	 $('[data-toggle="popover"].available').popover({
-	  		template: '<div class="popover warningPopover" role="tooltip"><div class="arrow"></div><h3 class="popover-title"></h3><div class="popover-content"></div></div>'
-
-	  	});
-	});
-
-});
-
-
-    $(function () {
-        $('#cd-dropdown').dropdown({
-            //gutter: 2,
-            easing: 'ease',
-            onOptionSelect: function (opt) {
-                alert(opt.attr("data-value"));
-            }
-        });
-    });
-
+ });
 </script>
-
 </body>
 </html>

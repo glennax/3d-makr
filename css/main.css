@@ -54,6 +54,10 @@ padding: 0;
     top: 4px;
     left: 15px;
 }
+
+ul.navbar-nav .active{
+	color: #0B486B !important;
+}
 .tagline{
 	    width: 750px;
     margin: 0 auto;
@@ -81,12 +85,16 @@ h2, h3, h4{
 	font-size: 38pt;
 	font-weight: 900;
 	margin-top: 200px;
+	
 }
 
+.intro h2, .intro h3{
+	text-shadow: 1px 1px 1px #f0fae0;
+}
 h3{
 	font-size: 34pt;
 	font-weight: 700;
-	    margin-bottom: 35px;
+	margin-bottom: 35px;
 
 }
 
@@ -127,7 +135,9 @@ h4{
 }
 .tower{
 	padding:0;
-	background: no-repeat center/100% url("../images/rsz_homepage.jpg");
+	background: 
+	linear-gradient(rgba(255,240,0,0.15), rgba(0,0,0, 0.15) ),
+    no-repeat center/100% url("../images/rsz_homepage.jpg");
     height: 683px;
 }
 
@@ -342,6 +352,7 @@ h4{
 #settings{
 	    padding: 30px 50px;
 	    padding-top: 0;
+	    margin-bottom: 0;
 }
 .settingLabel{
 	font-size: 14pt;
@@ -458,6 +469,101 @@ h4{
 	display: none;
 }
 
+.file-error-message pre{
+	display: none;
+}
+
+.designForm{
+	width: 1000px;
+	margin: 40px auto;
+	 color: #0B486B;
+}
+
+
+.designForm .form-group {
+    margin-left: 0;
+    margin-right: 0;
+}
+
+.design .title{
+	margin-bottom: 40px;
+}
+
+.upload .title h3{
+	border-bottom: none;
+}
+#submitForm{
+	margin-bottom: 40px;
+}
+
+.contact{
+	    width: 1000px;
+    margin: 0 auto;
+  color: #0B486B;
+  	    margin-bottom: 40px;
+}
+.contactInfo h5{
+	margin-bottom: 20px;
+	font-size: 16pt;
+}
+.contactInfo {
+	padding-left: 40px;
+
+}
+.contactForm{
+	padding-right: 40px;
+}
+
+.contactTitle{
+	margin-bottom: 40px;
+}
+
+#login, #signup{
+	color: #0B486B;
+	top: 200px;
+}
+
+.modal-body{
+	padding: 20px 40px;
+}
+.forgot{
+	color: #3B8686;
+	text-decoration: none;
+}
+.forgot:hover, .forgot:active, .forgot:focus{
+	color: #0B486B;
+	text-decoration: none;
+
+}
+
+#signup h4{
+	color: #bd797a;
+}
+
+#feedback{
+	background-color: #79BD9A;
+	margin: 0 auto;
+    text-align: center;
+    display: none;
+}
+#feedback h4{
+	color: #edf7fd;
+	margin-bottom: 20px;
+
+}
+#feedback p {
+	font-size: 18pt;
+	color: #edf7fd;
+	margin-bottom: 40px;
+}
+.printer{
+	    margin-top: 40px;
+}
+.feedbackmsg{
+	font-size: 14pt;
+	color:#3B8686;
+	display: none; 
+}
 /*footer*/
 html {
   position: relative;
@@ -470,9 +576,7 @@ html {
   width: 100%;
   background-color: #0B486B;
   color: white;
-
   text-align: center;
-/*  display: none;*/
 }
 
 .footer.row{
@@ -490,4 +594,17 @@ html {
 
 .copyright{
 	margin-bottom: 15px;
+}
+
+.overlay{
+
+	position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    z-index: 1040;
+    background-color: #000;
+    opacity: .3;
+    display: none;
 }
