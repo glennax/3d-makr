@@ -137,8 +137,8 @@ h4{
 	border-radius: 10px;
 	border-color: #bd797a;
 	color: white;
-	    outline: none;
-	        padding: 6px 25px;
+	outline: none;
+	padding: 6px 25px;
     font-size: 14pt;
 }
 .btn-default:hover{
@@ -160,6 +160,38 @@ h4{
     border-color: #b56869;
  outline: none;
 }
+
+
+.btn-primary{
+	 background-color: #79BD9A;
+	 box-shadow: none;
+    border-radius: 0;
+    border-color: #79BD9A;
+    color: white;
+    outline: none;
+    padding: 5px 25px;
+    font-size: 12pt;
+}
+.btn-primary:hover{
+    color: white;
+    background-color: #4d9c74;
+    border-color: #4d9c74;
+}
+
+.btn-primary:active{
+	 background-color: #4d9c74;
+   outline: none;
+
+}
+.btn-primary:focus{
+	color: white;
+    background-color: #4d9c74;
+    border-color: #4d9c74;
+ 	outline: none;
+}
+
+
+
 .btn-lg{
 	padding: 10px 20px;
 	font-size: 20pt;
@@ -169,11 +201,11 @@ h4{
 	margin-top: 8px;
 }
 
-.couponForm .form-control{
+.coupon .form-control{
 	height: 50px;
 }
 
-.couponForm .form-control:focus {
+.form-control:focus {
     border-color:#3B8686;
     outline: 0;
     -webkit-box-shadow: inset 0 1px 1px rgba(0,0,0,.075), 0 0 8px rgba(59, 134, 134, 0.6);
@@ -181,12 +213,14 @@ h4{
 }
 
 .selection{
-	height: 300px;
+	height: 400px;
 	text-align: center;
 	background-color: #A8DBA8;
 
 }
-
+.selection h4{
+	    margin-top: 100px;
+}
 #option1btn, #option2btn{
 	margin: 0 40px;
 }
@@ -207,19 +241,21 @@ h4{
 
 #option1{
 	background-color: #edf7fd;
-	height: 400px;
+	height: 750px;
 	text-align: center;
 }
 
-.red{
+.brand{
 	color: #bd797a !important;
+	font-family: 'Righteous', 'Roboto', sans-serif;
+	font-weight: normal;
 }
 
-.bigNum{
-	font-size: 32pt;
+.bigNum1,.bigNum2, .bigNum3 {
+	font-size: 34pt;
 	text-align: center;
-	color: #3B8686;
 	margin-bottom: 15px;
+	font-weight: 500;
 }
 
 .instruction{
@@ -228,19 +264,43 @@ h4{
 	color: #3B8686;
 	margin: 30px 0;
 }
+.description1, .description2, .description3{
+	font-size: 14pt;
+	margin-bottom: 5px;
+	margin-top: 40px;
+}
+
+.itemList1, .itemList2, .itemList3{
+		list-style: none;
+	font-size: 16pt;
+}
+.description1, .itemList1,.bigNum1{
+	color: #3B8686; 
+}
+
+.description2, .itemList2,.bigNum2{
+	color: #0B486B; 
+}
+.description3, .itemList3,.bigNum3{
+	color: #bd797a; 
+}
+
+#upload{
+	margin-top: 30px;
+}
 
 #option1 h4, #option2 h4{
-	margin: 30px 0;
+	margin: 40px 0;
 }
 #option2{
-	height: 400px;
+	height: 650px;
 	background-color: #79BD9A;
 	text-align: center;
 	color: #edf7fd;
 }
 #option2 h4{
 	color:  #edf7fd;
-	margin-bottom: 40px;
+	margin-bottom: 50px;
 }
 .needHelp{
 	font-size: 24pt;
@@ -250,7 +310,7 @@ h4{
 }
  
 #submit{
-	margin-top: 20px;
+	margin-top: 40px;
 }
 
 .btn-default a{
@@ -260,6 +320,144 @@ h4{
 .btn-default a:hover{
 	color: white;
 }
+.message{
+	margin: 50px 0;
+}
+
+.fileInput{
+	background-color: #edf7fd;
+	margin: 0 20px;
+	padding: 30px 50px;
+
+}
+.fileInput .input-group{
+	padding: 0 20px;
+	height: 40px;
+}
+
+.fileInput h4{
+	margin: 0 30px;
+}
+
+#settings{
+	    padding: 30px 50px;
+	    padding-top: 0;
+}
+.settingLabel{
+	font-size: 14pt;
+	color: #0B486B;
+}
+#settings .radio-inline{
+	margin: 0 20px;
+}
+#settings .color .radio-inline p{
+	font-size: 12pt;
+	color: #0B486B;
+	text-align: center;
+	margin: 10px 0;
+}
+#settings .radio-inline img{
+	display: block;
+	margin: 0 auto;
+}
+
+#settings .color .radio-inline input[type="radio"]{
+	margin-top: 20px;
+}
+
+#settings .material .radio-inline input[type="radio"]{
+	margin-top: 12px;
+}
+
+.material{
+	text-align: left;
+}
+
+#settings .material .radio-inline .termExp{
+	margin: 0; 
+	font-size: 10pt;
+	    margin-top: -10px;
+	color: #0B486B;
+}
+
+#settings .material .radio-inline{
+	margin: 10px 20px;
+}
+
+.layer .form-control{
+	margin-left: 15px;
+}
+
+.or{
+	font-size: 24pt;
+	text-align: center;
+	font-weight: 500;
+	color: #0B486B;
+}
+
+
+.chooseDefault{
+	width: 280px;
+	margin: 0 auto;
+	margin-bottom: 30px;
+}
+
+#pay{
+		background-color: #edf7fd;
+}
+
+.address, .summary, .payment{
+	    padding: 0 50px;
+    padding-bottom: 50px;
+}
+.divider{
+	border-right: 1px dashed #A8DBA8;
+}
+
+#copyAddress{
+	margin-top: 30px;
+}
+
+#pay h5{
+	text-align: center;
+	font-size: 20pt;
+	font-weight: normal;
+	color: #3B8686;
+	margin-bottom: 20px;
+}
+.summary{
+		color: #0B486B;
+}
+
+.summary .tableHeader{
+	font-size: 16pt;
+
+
+}
+
+.summary .tableItem{
+	font-size: 14pt;
+	margin: 5px 0;
+}
+
+.payment .expiration{
+	padding: 0;
+}
+
+.payment .submit span{
+	font-size: 14pt;
+	color: #0B486B;
+	margin: 0 20px;
+}
+
+#paypal{
+	cursor: pointer;
+}
+
+#pay, #settings{
+	display: none;
+}
+
 /*footer*/
 html {
   position: relative;

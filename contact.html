@@ -25,7 +25,7 @@
 <body>
 
 
-<nav class="navbar navbar-default navbar-fixed-top">
+<nav class="navbar navbar-default">
   <div class="container-fluid">
     <!-- Brand and toggle get grouped for better mobile display -->
     <div class="navbar-header">
@@ -42,8 +42,8 @@
     <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
       <ul class="nav navbar-nav">
         <li class=""><a href="how-it-works.html">How It Works<span class="sr-only">(current)</span></a></li>
-        <li><a href="upload.html">Upload Model</a></li>
-        <li><a href="customize.html">Customized Design</a></li>
+        <li><a href="#">Upload Model</a></li>
+        <li><a href="#">Customized Design</a></li>
 
       </ul>
      <!--  <form class="navbar-form navbar-left" role="search">
@@ -61,51 +61,77 @@
   </div><!-- /.container-fluid -->
 </nav>
 <div class="container-fluid">
-<div class="intro row">
-<!-- 	<div class="col-sm-7">
-		<h2>Beautifully Crafted 3D Models.</h2>
-		<h3>Delivered to Your Home.</h3>
-		<button type="button" class="btn btn-default btn-lg">Learn More</button>
-	</div> -->
-	<div class="col-sm-12 tower">
-    <div class="tagline">
-      <h2>Beautifully Printed 3D Models.</h2>
-      <h3>Delivered to Your Home.</h3>
-      <button type="button" class="btn btn-default btn-lg" onClick="location.href='how-it-works.html'">Learn More</button>
-    </div>
-	
+<div class="content row">
+  <div class="col-sm-12 title">
+    <h3>How Does <span class="brand">The 3D Makr</span> work?</h3>
 
-	</div>	
-<!-- 	<div class="col-sm-1"></div> -->
+  </div>
+  <div class="col-sm-12 selection">
+    <h4>Please select from the following:</h4>
+     <button type="button" class="btn btn-default btn-lg" id="option1btn"><a href="#option1">I know what I want to 3D print</a></button>
+    <button type="button" class="btn btn-default btn-lg" id="option2btn"><a href="#option2">I don't know what to 3D print</a></button>
+   
 
-
-	<div class="col-sm-4 testimonial">
-
-      <img src="images/quote.png" class="quote" alt="quote symbol">
-
-
-        <p>&#8220;Creative, fun and best quality ever!&#8221;</p>
-    <p class="customer">- Customer Andrew A. Martin</p>
   </div>
 
-	<div class="col-sm-8 coupon">
-		<h4>We want to send you a 30% off coupon as a welcoming gift. </h4>
-		<div class="clearfix"></div>
-     <form class="couponForm">
-     	<div class="col-sm-2"></div>
-        <div class="col-sm-6">
-          <input type="text" class="form-control" placeholder="Type your email">
-        </div>
-        <div class="col-sm-2">
-        	<button type="submit" class="btn btn-default" id="couponBtn">Receive a coupon!</button>
-        </div>
-        <div class="col-sm-2"></div>
-      </form>
-	</div>
+  <div class="col-sm-12" id="option1">
+    <h4>Print Your Own Model</h4>
+    <div class="col-sm-4">
+      <p class="bigNum1">1</p><img src="images/step1.png" height="135px" alt="upload model file">
+      <p class="instruction">Upload Model File</p>
+      <p class="description1">We accept most standard 3D file formats including:</p>
+       <ul class="itemList1">
+       <li>.stl</li>
+        <li>.obj</li>
+        <li>.blend </li>
+        <li>.ply</li>
+       </ul>
+    </div>
+
+    <div class="col-sm-4">
+      <p class="bigNum2">2</p><img src="images/step2.png" alt="choose settings">
+      <p class="instruction">Choose Settings</p>
+        <p class="description2">You can choose the following settings:</p>
+       <ul class="itemList2">
+
+       <li>Color</li>
+          <li>Material</li>
+          <li>Size</li>
+        <li>Layer Thickness</li>
+  
+     
+       </ul>
+    </div>
+
+      <div class="col-sm-4">
+      <p class="bigNum3">3</p><img src="images/step3.png" height="135px" alt="Check Out">
+      <p class="instruction">Check Out</p>
+      <p class="description3">You can pay by:</p>
+       <ul class="itemList3">
+       <li>PayPal</li>
+        <li>Credit Card</li>
+        <li>Debit Card</li>
+       </ul>
+    </div>
+    <div class="clearfix"></div>
+     <button type="button" class="btn btn-default btn-lg" id="upload">Try It Out</button>
+
+  </div>
+
+  <div class="col-sm-12" id="option2">
+    <h4>Customize Your Design</h4>
+    <p class="needHelp">Need help design your own model?</p>
+    <img src="images/message.png" width="200px" alt="Contact us for customized design" class="message">
+    <p class="ourTeam">Our team is here to work with you so that you can design and print your best creative ideas. </p>
+     <p class="ourTeam">Simply fill out a form and our team will reach out to you within 24 hours.</p>
+
+    <button type="button" class="btn btn-default btn-lg" id="submit">Submit Request</button>
+  </div>
+
 
 
 </div><!-- closing row -->
-</div>
+</div><!-- closing container -->
   <footer class="row footer">
     <div class="container-fluid">
       <div class="group1">
