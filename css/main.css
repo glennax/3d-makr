@@ -524,9 +524,14 @@ h4{
 
 #login, #signup{
 	color: #0B486B;
+
+}
+#signup{
+	top: 100px;
+}
+#login{
 	top: 200px;
 }
-
 .modal-body{
 	padding: 20px 40px;
 }
